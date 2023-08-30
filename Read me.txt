@@ -1,0 +1,68 @@
+
+# Credit Card Fraud Detection Project
+
+
+## Overview
+
+This project aims to develop and evaluate machine learning models for detecting credit card fraud using an imbalanced dataset. The dataset contains transactions made by European cardholders in September 2013. The goal is to build effective models that can accurately identify fraudulent transactions while handling the class imbalance.
+
+
+
+## Background
+
+Credit card fraud is a critical issue in financial transactions. Machine learning models can help detect and prevent fraudulent transactions, but dealing with imbalanced data poses challenges. This project explores various techniques to address class imbalance and build effective fraud detection models.
+
+## Dataset
+
+The dataset contains credit card transactions, with features obtained through PCA transformation to ensure confidentiality. Key features include transaction amount, time, and principal components V1-V28. The 'Class' feature indicates whether a transaction is fraudulent (1) or not (0).
+
+## Project Structure
+
+The project is organized as follows:
+
+- **Notebooks:** Jupyter notebooks containing the code for data preprocessing, model building, and evaluation.
+- **Data:** Contains the credit card dataset (not provided due to confidentiality) and any generated balanced datasets.
+- **Images:** Stores images used in the project, such as banners and visualizations.
+- **README.md:** Project documentation and overview.
+
+## Data Preprocessing
+
+Data preprocessing involves scaling the 'Amount' and 'Time' features, shuffling the data, and splitting it into training, validation, and test sets.
+
+## Model Building and Evaluation
+
+Various machine learning models are developed, including:
+- Logistic Regression
+- Shallow Neural Network
+- Random Forest Classifier
+- Gradient Boosting Classifier
+- Linear Support Vector Classifier (SVC)
+
+Models are evaluated using classification reports to measure precision, recall, F1-score, and other metrics.
+
+## Handling Class Imbalance
+
+To address class imbalance, the project creates a balanced dataset with an equal number of fraud and non-fraud transactions. Models are trained on this balanced dataset and evaluated using the validation set.
+
+## Results
+
+The project showcases the performance of different models for credit card fraud detection, considering both the original imbalanced dataset and the balanced dataset. Model evaluation metrics are compared to determine effectiveness.
+
+## How to Use
+
+To run the project:
+1. Clone this repository to your local machine.
+2. Install the required libraries specified in the notebooks.
+3. Run the Jupyter notebooks in the order specified to replicate the analysis and model building.
+
+## Technologies Used
+
+- Python
+- Jupyter Notebooks
+- Libraries: pandas, scikit-learn, TensorFlow, Keras, matplotlib, seaborn
+
+## Acknowledgements
+
+- The dataset is sourced from [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud).
+- Inspiration for handling class imbalance and model evaluation techniques from data science community discussions.
+
